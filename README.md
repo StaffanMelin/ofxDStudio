@@ -7,6 +7,9 @@ DStudio provides another abstraction layer where you don't deal with soundstream
 
 Like making a studio with code!
 
+Demo of what DStudio can do:
+https://youtu.be/65uiYlsG29Q
+
 The parts of DStudio are:
 * ofxDaisySP – an addon with DaisySP, a DSP library.
 * ofxDStudio – an addon which builds upon DaisySP to give you synthesizers, a sample player, drum sounds, FX plugins, a mixer with FX, sequencers as well as utilities. All can be controlled by MIDI.
@@ -28,3 +31,5 @@ Files will soon be added here.
 
 You can download source code, examples and a manual from
 https://www.oscillator.se/opensource/#openframeworks
+
+There is also a release of DStudio for rtAudio.
