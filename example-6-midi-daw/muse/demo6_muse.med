@@ -1,0 +1,2152 @@
+<?xml version="1.0"?>
+<muse version="3.3">
+  <configuration>
+    <midiInputDevice>0</midiInputDevice>
+    <midiInputChannel>0</midiInputChannel>
+    <midiRecordType>0</midiRecordType>
+    <midiThruType>0</midiThruType>
+    <midiFilterCtrl1>0</midiFilterCtrl1>
+    <midiFilterCtrl2>0</midiFilterCtrl2>
+    <midiFilterCtrl3>0</midiFilterCtrl3>
+    <midiFilterCtrl4>0</midiFilterCtrl4>
+    <mtctype>1</mtctype>
+    <mtcoffset>00:00:00:00:00</mtcoffset>
+    <sendClockDelay>1</sendClockDelay>
+    <useJackTransport>1</useJackTransport>
+    <timebaseMaster>1</timebaseMaster>
+    <syncRecFilterPreset>2</syncRecFilterPreset>
+    <syncRecTempoValQuant>1</syncRecTempoValQuant>
+    <extSync>0</extSync>
+    <bigtimeVisible>0</bigtimeVisible>
+    <transportVisible>0</transportVisible>
+    <geometryMain x="0" y="25" w="948" h="540"></geometryMain>
+    <geometryTransport x="695" y="571" w="100" h="30"></geometryTransport>
+    <markerVisible>0</markerVisible>
+    <mixer1Visible>0</mixer1Visible>
+    <mixer2Visible>0</mixer2Visible>
+    <Mixer>
+      <name>Mixer A</name>
+      <geometry x="151" y="89" w="1179" h="628"></geometry>
+      <showMidiTracks>0</showMidiTracks>
+      <showDrumTracks>1</showDrumTracks>
+      <showNewDrumTracks>1</showNewDrumTracks>
+      <showInputTracks>0</showInputTracks>
+      <showOutputTracks>1</showOutputTracks>
+      <showWaveTracks>1</showWaveTracks>
+      <showGroupTracks>1</showGroupTracks>
+      <showAuxTracks>1</showAuxTracks>
+      <showSyntiTracks>1</showSyntiTracks>
+      <displayOrder>-1003</displayOrder>
+      </Mixer>
+    <Mixer>
+      <name>Mixer B</name>
+      <geometry x="86" y="60" w="1092" h="810"></geometry>
+      <showMidiTracks>1</showMidiTracks>
+      <showDrumTracks>1</showDrumTracks>
+      <showNewDrumTracks>1</showNewDrumTracks>
+      <showInputTracks>1</showInputTracks>
+      <showOutputTracks>1</showOutputTracks>
+      <showWaveTracks>1</showWaveTracks>
+      <showGroupTracks>1</showGroupTracks>
+      <showAuxTracks>1</showAuxTracks>
+      <showSyntiTracks>1</showSyntiTracks>
+      <displayOrder>-1004</displayOrder>
+      </Mixer>
+    <sequencer>
+      <metronom>
+        <premeasures>2</premeasures>
+        <measurepitch>37</measurepitch>
+        <measurevelo>127</measurevelo>
+        <beatpitch>42</beatpitch>
+        <beatvelo>120</beatvelo>
+        <accentpitch1>44</accentpitch1>
+        <accentpitch2>42</accentpitch2>
+        <accentvelo1>100</accentvelo1>
+        <accentvelo2>100</accentvelo2>
+        <channel>9</channel>
+        <port>0</port>
+        <metroUseSongSettings>0</metroUseSongSettings>
+        <precountEnable>0</precountEnable>
+        <fromMastertrack>1</fromMastertrack>
+        <signatureZ>4</signatureZ>
+        <signatureN>4</signatureN>
+        <precountOnPlay>0</precountOnPlay>
+        <precountMuteMetronome>0</precountMuteMetronome>
+        <prerecord>0</prerecord>
+        <preroll>0</preroll>
+        <midiClickEnable>0</midiClickEnable>
+        <audioClickEnable>1</audioClickEnable>
+        <audioClickVolume>0.5</audioClickVolume>
+        <measClickVolume>1</measClickVolume>
+        <beatClickVolume>1</beatClickVolume>
+        <accent1ClickVolume>0.1</accent1ClickVolume>
+        <accent2ClickVolume>0.1</accent2ClickVolume>
+        <clickSamples>1</clickSamples>
+        <beatSample>klick2.wav</beatSample>
+        <measSample>klick1.wav</measSample>
+        <accent1Sample>klick3.wav</accent1Sample>
+        <accent2Sample>klick4.wav</accent2Sample>
+        </metronom>
+      <rcEnable>0</rcEnable>
+      <rcStop>28</rcStop>
+      <rcRecord>31</rcRecord>
+      <rcGotoLeft>33</rcGotoLeft>
+      <rcPlay>29</rcPlay>
+      <rcSteprec>36</rcSteprec>
+      <rcForward>26</rcForward>
+      <rcRewind>24</rcRewind>
+      <rcEnableCC>0</rcEnableCC>
+      <rcStopCC>114</rcStopCC>
+      <rcRecordCC>117</rcRecordCC>
+      <rcGotoLeftCC>111</rcGotoLeftCC>
+      <rcPlayCC>115</rcPlayCC>
+      <rcForwardCC>113</rcForwardCC>
+      <rcRewindCC>112</rcRewindCC>
+      <mididevice>
+        <name>Midi Through Port-0</name>
+        <openFlags>0</openFlags>
+        </mididevice>
+      <mididevice>
+        <name>ofxMidi Input 1</name>
+        </mididevice>
+      <mididevice>
+        <name>input</name>
+        <openFlags>0</openFlags>
+        </mididevice>
+      <mididevice>
+        <name>jack-midi-0</name>
+        <type>1</type>
+        <openFlags>0</openFlags>
+        <rwFlags>3</rwFlags>
+        </mididevice>
+      <midiport idx="0">
+        <defaultInChans>1</defaultInChans>
+        <name>ofxMidi Input 1</name>
+        <channel idx="0">
+          <controller id="10">
+            <val>59</val>
+            </controller>
+          </channel>
+        </midiport>
+      <midiport idx="1">
+        <defaultInChans>0</defaultInChans>
+        <name>input</name>
+        </midiport>
+      <midiport idx="2">
+        <defaultInChans>0</defaultInChans>
+        <name>jack-midi-0</name>
+        </midiport>
+      <midiport idx="3">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="4">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="5">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="6">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="7">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="8">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="9">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="10">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="11">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="12">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="13">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="14">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="15">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="16">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="17">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="18">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="19">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="20">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="21">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="22">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="23">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="24">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="25">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="26">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="27">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="28">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="29">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="30">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="31">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="32">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="33">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="34">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="35">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="36">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="37">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="38">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="39">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="40">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="41">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="42">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="43">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="44">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="45">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="46">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="47">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="48">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="49">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="50">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="51">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="52">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="53">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="54">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="55">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="56">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="57">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="58">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="59">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="60">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="61">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="62">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="63">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="64">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="65">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="66">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="67">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="68">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="69">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="70">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="71">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="72">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="73">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="74">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="75">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="76">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="77">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="78">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="79">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="80">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="81">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="82">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="83">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="84">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="85">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="86">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="87">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="88">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="89">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="90">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="91">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="92">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="93">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="94">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="95">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="96">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="97">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="98">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="99">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="100">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="101">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="102">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="103">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="104">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="105">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="106">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="107">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="108">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="109">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="110">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="111">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="112">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="113">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="114">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="115">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="116">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="117">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="118">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="119">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="120">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="121">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="122">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="123">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="124">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="125">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="126">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="127">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="128">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="129">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="130">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="131">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="132">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="133">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="134">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="135">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="136">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="137">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="138">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="139">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="140">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="141">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="142">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="143">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="144">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="145">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="146">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="147">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="148">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="149">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="150">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="151">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="152">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="153">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="154">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="155">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="156">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="157">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="158">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="159">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="160">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="161">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="162">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="163">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="164">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="165">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="166">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="167">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="168">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="169">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="170">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="171">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="172">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="173">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="174">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="175">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="176">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="177">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="178">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="179">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="180">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="181">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="182">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="183">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="184">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="185">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="186">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="187">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="188">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="189">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="190">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="191">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="192">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="193">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="194">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="195">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="196">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="197">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="198">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      <midiport idx="199">
+        <defaultInChans>0</defaultInChans>
+        </midiport>
+      </sequencer>
+    <dialogs>
+      <mod_len>
+        <range>512</range>
+        <parts>8192</parts>
+        <offset>0</offset>
+        <rate>100</rate>
+        </mod_len>
+      <mod_velo>
+        <range>512</range>
+        <parts>8192</parts>
+        <offset>0</offset>
+        <rate>100</rate>
+        </mod_velo>
+      <quantize>
+        <range>512</range>
+        <parts>8192</parts>
+        <strength>90</strength>
+        <threshold>0</threshold>
+        <raster>3</raster>
+        <swing>0</swing>
+        <quant_len>1</quant_len>
+        </quantize>
+      <erase>
+        <range>512</range>
+        <parts>8192</parts>
+        <velo_threshold>16</velo_threshold>
+        <velo_thres_used>0</velo_thres_used>
+        <len_threshold>12</len_threshold>
+        <len_thres_used>0</len_thres_used>
+        </erase>
+      <del_overlaps>
+        <range>512</range>
+        <parts>8192</parts>
+        </del_overlaps>
+      <setlen>
+        <range>512</range>
+        <parts>8192</parts>
+        <len>384</len>
+        </setlen>
+      <move>
+        <range>512</range>
+        <parts>8192</parts>
+        <amount>0</amount>
+        </move>
+      <transpose>
+        <range>256</range>
+        <parts>8192</parts>
+        <amount>-12</amount>
+        </transpose>
+      <crescendo>
+        <range>1024</range>
+        <parts>8192</parts>
+        <start>80</start>
+        <end>130</end>
+        <absolute>0</absolute>
+        </crescendo>
+      <legato>
+        <range>512</range>
+        <parts>8192</parts>
+        <min_len>0</min_len>
+        <allow_shortening>0</allow_shortening>
+        </legato>
+      <pastedialog>
+        <insert_method>0</insert_method>
+        <number>1</number>
+        <raster>384</raster>
+        <clone>0</clone>
+        <all_in_one_track>0</all_in_one_track>
+        </pastedialog>
+      <pasteeventsdialog>
+        <number>1</number>
+        <raster>384</raster>
+        <always_new_part>0</always_new_part>
+        <never_new_part>0</never_new_part>
+        <max_distance>3072</max_distance>
+        <into_single_part>0</into_single_part>
+        <ctrl_erase>1</ctrl_erase>
+        <ctrl_erase_wysiwyg>1</ctrl_erase_wysiwyg>
+        <ctrl_erase_inclusive>0</ctrl_erase_inclusive>
+        </pasteeventsdialog>
+      </dialogs>
+    </configuration>
+  <song>
+    <info></info>
+    <showinfo>1</showinfo>
+    <cpos>0</cpos>
+    <rpos>30720</rpos>
+    <lpos>0</lpos>
+    <master>0</master>
+    <loop>0</loop>
+    <punchin>0</punchin>
+    <punchout>0</punchout>
+    <record>0</record>
+    <solo>0</solo>
+    <recmode>0</recmode>
+    <cycle>0</cycle>
+    <click>0</click>
+    <quantize>0</quantize>
+    <len>230400</len>
+    <follow>0</follow>
+    <midiDivision>384</midiDivision>
+    <sampleRate>44100</sampleRate>
+    <AudioOutput>
+      <name>Out 1</name>
+      <record>0</record>
+      <mute>0</mute>
+      <solo>0</solo>
+      <off>0</off>
+      <channels>2</channels>
+      <height>24</height>
+      <locked>0</locked>
+      <recMonitor>0</recMonitor>
+      <selected>1</selected>
+      <selectionOrder>1</selectionOrder>
+      <prefader>0</prefader>
+      <sendMetronome>1</sendMetronome>
+      <automation>0</automation>
+      <gain>1</gain>
+      <controller id="0" cur="1" color="#ff0000" visible="0">
+        </controller>
+      <controller id="1" cur="0" color="#ff0000" visible="0">
+        </controller>
+      <controller id="2" cur="0" color="#ff0000" visible="0">
+        </controller>
+      </AudioOutput>
+    <miditrack>
+      <name>arp</name>
+      <record>0</record>
+      <mute>0</mute>
+      <solo>0</solo>
+      <off>0</off>
+      <channels>0</channels>
+      <height>24</height>
+      <locked>0</locked>
+      <recMonitor>0</recMonitor>
+      <device>0</device>
+      <channel>0</channel>
+      <locked>0</locked>
+      <transposition>0</transposition>
+      <velocity>0</velocity>
+      <delay>0</delay>
+      <len>100</len>
+      <compression>100</compression>
+      <automation>1</automation>
+      <clef>0</clef>
+      <part>
+        <name>Track 1</name>
+        <viewState xscroll="1524" yscroll="390" xscale="-24" yscale="2">
+          <ctrlViewState num="10" />
+          </viewState>
+        <poslen tick="1536" len="18432" />
+        <selected>0</selected>
+        <color>0</color>
+        <event tick="1536" type="1" a="10" b="57" />
+        <event tick="1536" len="96" a="67" b="70" />
+        <event tick="1632" type="1" a="10" b="62" />
+        <event tick="1728" type="1" a="10" b="66" />
+        <event tick="1728" len="96" a="67" b="70" />
+        <event tick="1824" type="1" a="10" b="69" />
+        <event tick="1920" type="1" a="10" b="76" />
+        <event tick="1920" len="96" a="74" b="70" />
+        <event tick="2016" type="1" a="10" b="82" />
+        <event tick="2112" type="1" a="10" b="87" />
+        <event tick="2112" len="96" a="72" b="70" />
+        <event tick="2208" type="1" a="10" b="91" />
+        <event tick="2304" type="1" a="10" b="95" />
+        <event tick="2304" len="96" a="67" b="70" />
+        <event tick="2400" type="1" a="10" b="98" />
+        <event tick="2496" type="1" a="10" b="101" />
+        <event tick="2496" len="96" a="67" b="70" />
+        <event tick="2592" type="1" a="10" b="106" />
+        <event tick="2688" type="1" a="10" b="107" />
+        <event tick="2688" len="96" a="74" b="70" />
+        <event tick="2784" type="1" a="10" b="107" />
+        <event tick="2880" type="1" a="10" b="107" />
+        <event tick="2880" len="96" a="72" b="70" />
+        <event tick="2976" type="1" a="10" b="107" />
+        <event tick="3072" type="1" a="10" b="106" />
+        <event tick="3072" len="96" a="67" b="70" />
+        <event tick="3168" type="1" a="10" b="106" />
+        <event tick="3264" type="1" a="10" b="104" />
+        <event tick="3264" len="96" a="67" b="70" />
+        <event tick="3360" type="1" a="10" b="101" />
+        <event tick="3456" type="1" a="10" b="98" />
+        <event tick="3456" len="96" a="74" b="70" />
+        <event tick="3552" type="1" a="10" b="95" />
+        <event tick="3648" type="1" a="10" b="91" />
+        <event tick="3648" len="96" a="72" b="70" />
+        <event tick="3744" type="1" a="10" b="88" />
+        <event tick="3840" type="1" a="10" b="85" />
+        <event tick="3840" len="96" a="67" b="70" />
+        <event tick="3936" type="1" a="10" b="80" />
+        <event tick="4032" type="1" a="10" b="77" />
+        <event tick="4032" len="96" a="67" b="70" />
+        <event tick="4128" type="1" a="10" b="71" />
+        <event tick="4224" type="1" a="10" b="65" />
+        <event tick="4224" len="96" a="74" b="70" />
+        <event tick="4320" type="1" a="10" b="55" />
+        <event tick="4416" type="1" a="10" b="35" />
+        <event tick="4416" len="96" a="72" b="70" />
+        <event tick="4512" type="1" a="10" b="22" />
+        <event tick="4608" type="1" a="10" b="19" />
+        <event tick="4608" len="96" a="67" b="70" />
+        <event tick="4704" type="1" a="10" b="18" />
+        <event tick="4800" type="1" a="10" b="16" />
+        <event tick="4800" len="96" a="67" b="70" />
+        <event tick="4896" type="1" a="10" b="15" />
+        <event tick="4992" type="1" a="10" b="40" />
+        <event tick="4992" len="96" a="74" b="70" />
+        <event tick="5088" type="1" a="10" b="48" />
+        <event tick="5184" type="1" a="10" b="55" />
+        <event tick="5184" len="96" a="72" b="70" />
+        <event tick="5280" type="1" a="10" b="63" />
+        <event tick="5376" type="1" a="10" b="71" />
+        <event tick="5376" len="96" a="67" b="70" />
+        <event tick="5472" type="1" a="10" b="79" />
+        <event tick="5568" type="1" a="10" b="85" />
+        <event tick="5568" len="96" a="67" b="70" />
+        <event tick="5664" type="1" a="10" b="91" />
+        <event tick="5760" type="1" a="10" b="91" />
+        <event tick="5760" len="96" a="74" b="70" />
+        <event tick="5856" type="1" a="10" b="91" />
+        <event tick="5952" type="1" a="10" b="91" />
+        <event tick="5952" len="96" a="72" b="70" />
+        <event tick="6048" type="1" a="10" b="93" />
+        <event tick="6144" type="1" a="10" b="93" />
+        <event tick="6144" len="96" a="67" b="70" />
+        <event tick="6240" type="1" a="10" b="91" />
+        <event tick="6336" type="1" a="10" b="80" />
+        <event tick="6336" len="96" a="67" b="70" />
+        <event tick="6432" type="1" a="10" b="79" />
+        <event tick="6528" type="1" a="10" b="77" />
+        <event tick="6528" len="96" a="74" b="70" />
+        <event tick="6624" type="1" a="10" b="74" />
+        <event tick="6720" type="1" a="10" b="71" />
+        <event tick="6720" len="96" a="72" b="70" />
+        <event tick="6816" type="1" a="10" b="68" />
+        <event tick="6912" type="1" a="10" b="65" />
+        <event tick="6912" len="96" a="67" b="70" />
+        <event tick="7008" type="1" a="10" b="60" />
+        <event tick="7104" type="1" a="10" b="55" />
+        <event tick="7104" len="96" a="67" b="70" />
+        <event tick="7200" type="1" a="10" b="51" />
+        <event tick="7296" type="1" a="10" b="46" />
+        <event tick="7296" len="96" a="74" b="70" />
+        <event tick="7392" type="1" a="10" b="41" />
+        <event tick="7488" type="1" a="10" b="35" />
+        <event tick="7488" len="96" a="72" b="70" />
+        <event tick="7584" type="1" a="10" b="27" />
+        <event tick="7680" type="1" a="10" b="27" />
+        <event tick="7680" len="96" a="67" b="70" />
+        <event tick="7776" type="1" a="10" b="27" />
+        <event tick="7872" type="1" a="10" b="27" />
+        <event tick="7872" len="96" a="67" b="70" />
+        <event tick="7968" type="1" a="10" b="30" />
+        <event tick="8064" type="1" a="10" b="35" />
+        <event tick="8064" len="96" a="74" b="70" />
+        <event tick="8160" type="1" a="10" b="43" />
+        <event tick="8256" type="1" a="10" b="49" />
+        <event tick="8256" len="96" a="72" b="70" />
+        <event tick="8352" type="1" a="10" b="55" />
+        <event tick="8448" type="1" a="10" b="63" />
+        <event tick="8448" len="96" a="67" b="70" />
+        <event tick="8544" type="1" a="10" b="69" />
+        <event tick="8640" type="1" a="10" b="76" />
+        <event tick="8640" len="96" a="67" b="70" />
+        <event tick="8736" type="1" a="10" b="82" />
+        <event tick="8832" type="1" a="10" b="90" />
+        <event tick="8832" len="96" a="74" b="70" />
+        <event tick="8928" type="1" a="10" b="96" />
+        <event tick="9024" type="1" a="10" b="102" />
+        <event tick="9024" len="96" a="72" b="70" />
+        <event tick="9120" type="1" a="10" b="107" />
+        <event tick="9216" type="1" a="10" b="110" />
+        <event tick="9216" len="96" a="67" b="70" />
+        <event tick="9312" type="1" a="10" b="112" />
+        <event tick="9408" type="1" a="10" b="112" />
+        <event tick="9408" len="96" a="67" b="70" />
+        <event tick="9504" type="1" a="10" b="109" />
+        <event tick="9600" type="1" a="10" b="106" />
+        <event tick="9600" len="96" a="74" b="70" />
+        <event tick="9696" type="1" a="10" b="104" />
+        <event tick="9792" type="1" a="10" b="98" />
+        <event tick="9792" len="96" a="72" b="70" />
+        <event tick="9888" type="1" a="10" b="93" />
+        <event tick="9984" type="1" a="10" b="84" />
+        <event tick="9984" len="96" a="67" b="70" />
+        <event tick="10080" type="1" a="10" b="79" />
+        <event tick="10176" type="1" a="10" b="71" />
+        <event tick="10176" len="96" a="67" b="70" />
+        <event tick="10272" type="1" a="10" b="63" />
+        <event tick="10368" type="1" a="10" b="54" />
+        <event tick="10368" len="96" a="74" b="70" />
+        <event tick="10464" type="1" a="10" b="51" />
+        <event tick="10560" type="1" a="10" b="48" />
+        <event tick="10560" len="96" a="72" b="70" />
+        <event tick="10656" type="1" a="10" b="44" />
+        <event tick="10752" type="1" a="10" b="44" />
+        <event tick="10752" len="96" a="67" b="70" />
+        <event tick="10848" type="1" a="10" b="41" />
+        <event tick="10944" type="1" a="10" b="40" />
+        <event tick="10944" len="96" a="67" b="70" />
+        <event tick="11040" type="1" a="10" b="43" />
+        <event tick="11136" type="1" a="10" b="44" />
+        <event tick="11136" len="96" a="74" b="70" />
+        <event tick="11232" type="1" a="10" b="49" />
+        <event tick="11328" type="1" a="10" b="69" />
+        <event tick="11328" len="96" a="72" b="70" />
+        <event tick="11424" type="1" a="10" b="73" />
+        <event tick="11520" type="1" a="10" b="77" />
+        <event tick="11520" len="96" a="67" b="70" />
+        <event tick="11616" type="1" a="10" b="82" />
+        <event tick="11712" type="1" a="10" b="88" />
+        <event tick="11712" len="96" a="67" b="70" />
+        <event tick="11808" type="1" a="10" b="95" />
+        <event tick="11904" type="1" a="10" b="102" />
+        <event tick="11904" len="96" a="74" b="70" />
+        <event tick="12096" len="96" a="72" b="70" />
+        <event tick="12288" len="96" a="67" b="70" />
+        <event tick="12480" len="96" a="67" b="70" />
+        <event tick="12672" len="96" a="74" b="70" />
+        <event tick="12768" type="1" a="10" b="110" />
+        <event tick="12864" type="1" a="10" b="107" />
+        <event tick="12864" len="96" a="72" b="70" />
+        <event tick="12960" type="1" a="10" b="106" />
+        <event tick="13056" type="1" a="10" b="104" />
+        <event tick="13056" len="96" a="67" b="70" />
+        <event tick="13152" type="1" a="10" b="102" />
+        <event tick="13248" type="1" a="10" b="102" />
+        <event tick="13248" len="96" a="67" b="70" />
+        <event tick="13344" type="1" a="10" b="102" />
+        <event tick="13440" type="1" a="10" b="101" />
+        <event tick="13440" len="96" a="74" b="70" />
+        <event tick="13536" type="1" a="10" b="99" />
+        <event tick="13632" type="1" a="10" b="98" />
+        <event tick="13632" len="96" a="72" b="70" />
+        <event tick="13728" type="1" a="10" b="95" />
+        <event tick="13824" type="1" a="10" b="93" />
+        <event tick="13824" len="96" a="67" b="70" />
+        <event tick="13920" type="1" a="10" b="91" />
+        <event tick="14016" type="1" a="10" b="91" />
+        <event tick="14016" len="96" a="67" b="70" />
+        <event tick="14112" type="1" a="10" b="91" />
+        <event tick="14208" type="1" a="10" b="91" />
+        <event tick="14208" len="96" a="74" b="70" />
+        <event tick="14304" type="1" a="10" b="91" />
+        <event tick="14400" type="1" a="10" b="91" />
+        <event tick="14400" len="96" a="72" b="70" />
+        <event tick="14496" type="1" a="10" b="91" />
+        <event tick="14592" type="1" a="10" b="88" />
+        <event tick="14592" len="96" a="67" b="70" />
+        <event tick="14688" type="1" a="10" b="87" />
+        <event tick="14784" type="1" a="10" b="82" />
+        <event tick="14784" len="96" a="67" b="70" />
+        <event tick="14880" type="1" a="10" b="79" />
+        <event tick="14976" type="1" a="10" b="76" />
+        <event tick="14976" len="96" a="74" b="70" />
+        <event tick="15072" type="1" a="10" b="73" />
+        <event tick="15168" type="1" a="10" b="69" />
+        <event tick="15168" len="96" a="72" b="70" />
+        <event tick="15264" type="1" a="10" b="63" />
+        <event tick="15360" type="1" a="10" b="62" />
+        <event tick="15360" len="96" a="67" b="70" />
+        <event tick="15456" type="1" a="10" b="60" />
+        <event tick="15552" type="1" a="10" b="59" />
+        <event tick="15552" len="96" a="67" b="70" />
+        <event tick="15648" type="1" a="10" b="59" />
+        <event tick="15744" type="1" a="10" b="59" />
+        <event tick="15744" len="96" a="74" b="70" />
+        <event tick="15840" type="1" a="10" b="59" />
+        <event tick="15936" type="1" a="10" b="59" />
+        <event tick="15936" len="96" a="72" b="70" />
+        <event tick="16032" type="1" a="10" b="59" />
+        <event tick="16128" type="1" a="10" b="57" />
+        <event tick="16128" len="96" a="67" b="70" />
+        <event tick="16224" type="1" a="10" b="59" />
+        <event tick="16320" type="1" a="10" b="59" />
+        <event tick="16320" len="96" a="67" b="70" />
+        <event tick="16416" type="1" a="10" b="59" />
+        <event tick="16512" type="1" a="10" b="59" />
+        <event tick="16512" len="96" a="74" b="70" />
+        <event tick="16608" type="1" a="10" b="59" />
+        <event tick="16704" type="1" a="10" b="57" />
+        <event tick="16704" len="96" a="72" b="70" />
+        <event tick="16800" type="1" a="10" b="55" />
+        <event tick="16896" type="1" a="10" b="55" />
+        <event tick="16896" len="96" a="67" b="70" />
+        <event tick="16992" type="1" a="10" b="54" />
+        <event tick="17088" type="1" a="10" b="54" />
+        <event tick="17088" len="96" a="67" b="70" />
+        <event tick="17184" type="1" a="10" b="54" />
+        <event tick="17280" type="1" a="10" b="54" />
+        <event tick="17280" len="96" a="74" b="70" />
+        <event tick="17376" type="1" a="10" b="54" />
+        <event tick="17472" type="1" a="10" b="55" />
+        <event tick="17472" len="96" a="72" b="70" />
+        <event tick="17568" type="1" a="10" b="57" />
+        <event tick="17664" type="1" a="10" b="59" />
+        <event tick="17664" len="96" a="67" b="70" />
+        <event tick="17760" type="1" a="10" b="60" />
+        <event tick="17856" type="1" a="10" b="63" />
+        <event tick="17856" len="96" a="67" b="70" />
+        <event tick="17952" type="1" a="10" b="65" />
+        <event tick="18048" type="1" a="10" b="68" />
+        <event tick="18048" len="96" a="74" b="70" />
+        <event tick="18144" type="1" a="10" b="71" />
+        <event tick="18240" type="1" a="10" b="74" />
+        <event tick="18240" len="96" a="72" b="70" />
+        <event tick="18336" type="1" a="10" b="76" />
+        <event tick="18432" type="1" a="10" b="79" />
+        <event tick="18432" len="96" a="67" b="70" />
+        <event tick="18528" type="1" a="10" b="82" />
+        <event tick="18624" type="1" a="10" b="84" />
+        <event tick="18624" len="96" a="67" b="70" />
+        <event tick="18720" type="1" a="10" b="84" />
+        <event tick="18816" type="1" a="10" b="85" />
+        <event tick="18816" len="96" a="74" b="70" />
+        <event tick="18912" type="1" a="10" b="85" />
+        <event tick="19008" type="1" a="10" b="87" />
+        <event tick="19008" len="96" a="72" b="70" />
+        <event tick="19104" type="1" a="10" b="87" />
+        <event tick="19200" type="1" a="10" b="87" />
+        <event tick="19200" len="96" a="67" b="70" />
+        <event tick="19296" type="1" a="10" b="87" />
+        <event tick="19392" type="1" a="10" b="87" />
+        <event tick="19392" len="96" a="67" b="70" />
+        <event tick="19488" type="1" a="10" b="90" />
+        <event tick="19584" type="1" a="10" b="93" />
+        <event tick="19584" len="96" a="74" b="70" />
+        <event tick="19680" type="1" a="10" b="96" />
+        <event tick="19776" type="1" a="10" b="101" />
+        <event tick="19776" len="96" a="72" b="70" />
+        <event tick="19872" type="1" a="10" b="104" />
+        </part>
+      <our_drum_settings>
+        <ordering_tied>1</ordering_tied>
+        </our_drum_settings>
+      </miditrack>
+    <miditrack>
+      <name>pad</name>
+      <record>0</record>
+      <mute>0</mute>
+      <solo>0</solo>
+      <off>0</off>
+      <channels>0</channels>
+      <height>24</height>
+      <locked>0</locked>
+      <recMonitor>0</recMonitor>
+      <device>0</device>
+      <channel>1</channel>
+      <locked>0</locked>
+      <transposition>0</transposition>
+      <velocity>0</velocity>
+      <delay>0</delay>
+      <len>100</len>
+      <compression>100</compression>
+      <automation>1</automation>
+      <clef>0</clef>
+      <part>
+        <name>pad</name>
+        <viewState xscroll="-5" yscroll="480" xscale="-10" yscale="2">
+          <ctrlViewState num="262146" />
+          </viewState>
+        <poslen tick="7680" len="6144" />
+        <selected>0</selected>
+        <color>0</color>
+        <event tick="7680" len="1536" a="62" b="70" />
+        <event tick="7680" len="384" a="69" b="70" />
+        <event tick="8064" len="1536" a="67" b="70" />
+        <event tick="9216" len="1536" a="60" b="70" />
+        <event tick="9600" len="1152" a="71" b="70" />
+        <event tick="10752" len="1152" a="74" b="70" />
+        <event tick="10752" len="1536" a="62" b="70" />
+        <event tick="11904" len="768" a="72" b="70" />
+        <event tick="12288" len="1536" a="60" b="70" />
+        <event tick="12672" len="1152" a="69" b="70" />
+        </part>
+      <part>
+        <name>pad</name>
+        <poslen tick="13824" len="6144" />
+        <selected>0</selected>
+        <color>0</color>
+        <event tick="13824" len="1536" a="62" b="70" />
+        <event tick="13824" len="384" a="69" b="70" />
+        <event tick="14208" len="1536" a="67" b="70" />
+        <event tick="15360" len="1536" a="60" b="70" />
+        <event tick="15744" len="1152" a="71" b="70" />
+        <event tick="16896" len="1152" a="74" b="70" />
+        <event tick="16896" len="1536" a="62" b="70" />
+        <event tick="18048" len="768" a="72" b="70" />
+        <event tick="18432" len="1536" a="60" b="70" />
+        <event tick="18816" len="1152" a="69" b="70" />
+        </part>
+      <part>
+        <name>pad</name>
+        <viewState xscroll="20785" yscroll="415" xscale="-10" yscale="2">
+          <ctrlViewState num="262146" />
+          </viewState>
+        <poslen tick="19968" len="8448" />
+        <selected>0</selected>
+        <color>0</color>
+        <event tick="19968" len="1536" a="62" b="70" />
+        <event tick="19968" len="384" a="69" b="70" />
+        <event tick="20352" len="1536" a="67" b="70" />
+        <event tick="21504" len="1536" a="60" b="70" />
+        <event tick="21888" len="1152" a="71" b="70" />
+        <event tick="23040" len="1152" a="74" b="70" />
+        <event tick="23040" len="1536" a="62" b="70" />
+        <event tick="24192" len="768" a="72" b="70" />
+        <event tick="24576" len="1536" a="60" b="70" />
+        <event tick="24960" len="1152" a="69" b="70" />
+        <event tick="26112" len="1152" a="67" b="70" />
+        <event tick="26112" len="1152" a="62" b="70" />
+        <event tick="27264" len="1152" a="62" b="70" />
+        <event tick="27264" len="1152" a="66" b="70" />
+        </part>
+      <our_drum_settings>
+        <ordering_tied>1</ordering_tied>
+        </our_drum_settings>
+      </miditrack>
+    <miditrack>
+      <name>lead</name>
+      <record>0</record>
+      <mute>0</mute>
+      <solo>0</solo>
+      <off>0</off>
+      <channels>0</channels>
+      <height>24</height>
+      <locked>0</locked>
+      <recMonitor>0</recMonitor>
+      <device>0</device>
+      <channel>2</channel>
+      <locked>0</locked>
+      <transposition>0</transposition>
+      <velocity>0</velocity>
+      <delay>0</delay>
+      <len>100</len>
+      <compression>100</compression>
+      <automation>1</automation>
+      <clef>0</clef>
+      <part>
+        <name>lead</name>
+        <viewState xscroll="16175" yscroll="390" xscale="-10" yscale="2">
+          <ctrlViewState num="262146" />
+          </viewState>
+        <poslen tick="13824" len="9216" />
+        <selected>0</selected>
+        <color>0</color>
+        <event tick="14208" len="768" a="69" b="70" />
+        <event tick="14880" len="1248" a="67" b="70" />
+        <event tick="16128" len="1152" a="69" b="70" />
+        <event tick="17280" len="2304" a="74" b="70" />
+        <event tick="19584" len="1536" a="71" b="70" />
+        </part>
+      <our_drum_settings>
+        <ordering_tied>1</ordering_tied>
+        </our_drum_settings>
+      </miditrack>
+    <miditrack>
+      <name>fm</name>
+      <record>0</record>
+      <mute>0</mute>
+      <solo>0</solo>
+      <off>0</off>
+      <channels>0</channels>
+      <height>24</height>
+      <locked>0</locked>
+      <recMonitor>0</recMonitor>
+      <device>0</device>
+      <channel>3</channel>
+      <locked>0</locked>
+      <transposition>0</transposition>
+      <velocity>0</velocity>
+      <delay>0</delay>
+      <len>100</len>
+      <compression>100</compression>
+      <automation>1</automation>
+      <clef>0</clef>
+      <part>
+        <name>fm</name>
+        <viewState xscroll="815" yscroll="390" xscale="-10" yscale="2">
+          <ctrlViewState num="262146" />
+          </viewState>
+        <poslen tick="7680" len="6144" />
+        <selected>0</selected>
+        <color>0</color>
+        <event tick="7872" len="96" a="76" b="70" />
+        <event tick="8448" len="96" a="74" b="70" />
+        <event tick="8736" len="96" a="72" b="70" />
+        <event tick="9600" len="384" a="72" b="70" />
+        <event tick="9984" len="384" a="71" b="70" />
+        <event tick="10368" len="384" a="69" b="70" />
+        <event tick="11136" len="384" a="72" b="70" />
+        <event tick="11520" len="384" a="71" b="70" />
+        <event tick="11904" len="384" a="69" b="70" />
+        <event tick="12672" len="384" a="72" b="70" />
+        <event tick="13056" len="384" a="71" b="70" />
+        <event tick="13440" len="384" a="69" b="70" />
+        </part>
+      <part>
+        <name>fm</name>
+        <poslen tick="13824" len="6144" />
+        <selected>0</selected>
+        <color>0</color>
+        <event tick="14016" len="96" a="76" b="70" />
+        <event tick="14592" len="96" a="74" b="70" />
+        <event tick="14880" len="96" a="72" b="70" />
+        <event tick="15744" len="384" a="72" b="70" />
+        <event tick="16128" len="384" a="71" b="70" />
+        <event tick="16512" len="384" a="69" b="70" />
+        <event tick="17280" len="384" a="72" b="70" />
+        <event tick="17664" len="384" a="71" b="70" />
+        <event tick="18048" len="384" a="69" b="70" />
+        <event tick="18816" len="384" a="72" b="70" />
+        <event tick="19200" len="384" a="71" b="70" />
+        <event tick="19584" len="384" a="69" b="70" />
+        </part>
+      <our_drum_settings>
+        <ordering_tied>1</ordering_tied>
+        </our_drum_settings>
+      </miditrack>
+    <miditrack>
+      <name>sampler</name>
+      <record>0</record>
+      <mute>0</mute>
+      <solo>0</solo>
+      <off>0</off>
+      <channels>0</channels>
+      <height>24</height>
+      <locked>0</locked>
+      <recMonitor>0</recMonitor>
+      <device>0</device>
+      <channel>4</channel>
+      <locked>0</locked>
+      <transposition>0</transposition>
+      <velocity>0</velocity>
+      <delay>0</delay>
+      <len>100</len>
+      <compression>100</compression>
+      <automation>1</automation>
+      <clef>0</clef>
+      <part>
+        <name>sampler</name>
+        <poslen tick="1536" len="6144" />
+        <selected>0</selected>
+        <color>0</color>
+        <event tick="2304" len="1152" a="67" b="70" />
+        <event tick="2400" len="5280" a="70" b="70" />
+        <event tick="3456" len="384" a="62" b="70" />
+        <event tick="3840" len="768" a="65" b="70" />
+        <event tick="4608" len="1536" a="60" b="70" />
+        <event tick="6144" len="1536" a="58" b="70" />
+        </part>
+      <part>
+        <name>sampler</name>
+        <viewState xscroll="-5" yscroll="420" xscale="-10" yscale="2">
+          <ctrlViewState num="262146" />
+          </viewState>
+        <poslen tick="7680" len="6144" />
+        <selected>0</selected>
+        <color>0</color>
+        <event tick="8448" len="1152" a="67" b="70" />
+        <event tick="8544" len="5280" a="70" b="70" />
+        <event tick="9600" len="384" a="62" b="70" />
+        <event tick="9984" len="768" a="65" b="70" />
+        <event tick="10752" len="1536" a="60" b="70" />
+        <event tick="12288" len="1536" a="58" b="70" />
+        </part>
+      <part>
+        <name>sampler</name>
+        <poslen tick="13824" len="6144" />
+        <selected>0</selected>
+        <color>0</color>
+        <event tick="14592" len="1152" a="67" b="70" />
+        <event tick="14688" len="5280" a="70" b="70" />
+        <event tick="15744" len="384" a="62" b="70" />
+        <event tick="16128" len="768" a="65" b="70" />
+        <event tick="16896" len="1536" a="60" b="70" />
+        <event tick="18432" len="1536" a="58" b="70" />
+        </part>
+      <our_drum_settings>
+        <ordering_tied>1</ordering_tied>
+        </our_drum_settings>
+      </miditrack>
+    <AudioInput>
+      <name>Input 1</name>
+      <record>0</record>
+      <mute>0</mute>
+      <solo>0</solo>
+      <off>0</off>
+      <channels>2</channels>
+      <height>24</height>
+      <locked>0</locked>
+      <recMonitor>0</recMonitor>
+      <prefader>0</prefader>
+      <sendMetronome>0</sendMetronome>
+      <automation>0</automation>
+      <gain>1</gain>
+      <controller id="0" cur="1" color="#ff0000" visible="0">
+        </controller>
+      <controller id="1" cur="0" color="#ffff00" visible="0">
+        </controller>
+      <controller id="2" cur="0" color="#0000ff" visible="0">
+        </controller>
+      </AudioInput>
+    <Route channel="0">
+      <source track="0"/>
+      <dest type="1" name="alsa_pcm:hw:0:in1"/>
+      </Route>
+    <Route channel="1">
+      <source track="0"/>
+      <dest type="1" name="alsa_pcm:hw:0:in2"/>
+      </Route>
+    <Route channel="0">
+      <source type="1" name="RtApiJack:outport 0"/>
+      <dest track="6"/>
+      </Route>
+    <Route channel="1">
+      <source type="1" name="RtApiJack:outport 1"/>
+      <dest track="6"/>
+      </Route>
+    <Route>
+      <source type="1" name="alsa_pcm:Midi-Through/midi_playback_1"/>
+      <dest devtype="1" name="jack-midi-0"/>
+      </Route>
+    <Route>
+      <source devtype="1" name="jack-midi-0"/>
+      <dest type="1" name="alsa_pcm:Midi-Through/midi_capture_1"/>
+      </Route>
+    <Route channel="0">
+      <source mport="0"/>
+      <dest track="1"/>
+      </Route>
+    <tempolist fix="666666">
+      <tempo at="21474837">
+        <tick>0</tick>
+        <val>500000</val>
+        </tempo>
+      </tempolist>
+    <siglist>
+      <sig at="21474836">
+        <tick>0</tick>
+        <nom>4</nom>
+        <denom>4</denom>
+        </sig>
+      </siglist>
+    <keylist>
+    <key at="21474837">
+      <tick>0</tick>
+      <val>1</val>
+      <minor>0</minor>
+      </key>
+    </keylist>
+    <drummap>
+      </drummap>
+    <drum_ordering>
+      <item track="1" instr="35" />
+      <item track="1" instr="36" />
+      <item track="1" instr="37" />
+      <item track="1" instr="38" />
+      <item track="1" instr="39" />
+      <item track="1" instr="40" />
+      <item track="1" instr="41" />
+      <item track="1" instr="42" />
+      <item track="1" instr="43" />
+      <item track="1" instr="44" />
+      <item track="1" instr="45" />
+      <item track="1" instr="46" />
+      <item track="1" instr="47" />
+      <item track="1" instr="48" />
+      <item track="1" instr="49" />
+      <item track="1" instr="50" />
+      <item track="1" instr="51" />
+      <item track="1" instr="52" />
+      <item track="1" instr="53" />
+      <item track="1" instr="54" />
+      <item track="1" instr="55" />
+      <item track="1" instr="56" />
+      <item track="1" instr="57" />
+      <item track="1" instr="58" />
+      <item track="1" instr="59" />
+      <item track="1" instr="60" />
+      <item track="1" instr="61" />
+      <item track="1" instr="62" />
+      <item track="1" instr="63" />
+      <item track="1" instr="64" />
+      <item track="1" instr="65" />
+      <item track="1" instr="66" />
+      <item track="1" instr="67" />
+      <item track="1" instr="68" />
+      <item track="1" instr="69" />
+      <item track="1" instr="70" />
+      <item track="1" instr="71" />
+      <item track="1" instr="72" />
+      <item track="1" instr="73" />
+      <item track="1" instr="74" />
+      <item track="1" instr="75" />
+      <item track="1" instr="76" />
+      <item track="1" instr="77" />
+      <item track="1" instr="78" />
+      <item track="1" instr="79" />
+      <item track="1" instr="80" />
+      <item track="1" instr="81" />
+      <item track="1" instr="0" />
+      <item track="1" instr="1" />
+      <item track="1" instr="2" />
+      <item track="1" instr="3" />
+      <item track="1" instr="4" />
+      <item track="1" instr="5" />
+      <item track="1" instr="6" />
+      <item track="1" instr="7" />
+      <item track="1" instr="8" />
+      <item track="1" instr="9" />
+      <item track="1" instr="10" />
+      <item track="1" instr="11" />
+      <item track="1" instr="12" />
+      <item track="1" instr="13" />
+      <item track="1" instr="14" />
+      <item track="1" instr="15" />
+      <item track="1" instr="16" />
+      <item track="1" instr="17" />
+      <item track="1" instr="18" />
+      <item track="1" instr="19" />
+      <item track="1" instr="20" />
+      <item track="1" instr="21" />
+      <item track="1" instr="22" />
+      <item track="1" instr="23" />
+      <item track="1" instr="24" />
+      <item track="1" instr="25" />
+      <item track="1" instr="26" />
+      <item track="1" instr="27" />
+      <item track="1" instr="28" />
+      <item track="1" instr="29" />
+      <item track="1" instr="30" />
+      <item track="1" instr="31" />
+      <item track="1" instr="32" />
+      <item track="1" instr="33" />
+      <item track="1" instr="34" />
+      <item track="1" instr="82" />
+      <item track="1" instr="83" />
+      <item track="1" instr="84" />
+      <item track="1" instr="85" />
+      <item track="1" instr="86" />
+      <item track="1" instr="87" />
+      <item track="1" instr="88" />
+      <item track="1" instr="89" />
+      <item track="1" instr="90" />
+      <item track="1" instr="91" />
+      <item track="1" instr="92" />
+      <item track="1" instr="93" />
+      <item track="1" instr="94" />
+      <item track="1" instr="95" />
+      <item track="1" instr="96" />
+      <item track="1" instr="97" />
+      <item track="1" instr="98" />
+      <item track="1" instr="99" />
+      <item track="1" instr="100" />
+      <item track="1" instr="101" />
+      <item track="1" instr="102" />
+      <item track="1" instr="103" />
+      <item track="1" instr="104" />
+      <item track="1" instr="105" />
+      <item track="1" instr="106" />
+      <item track="1" instr="107" />
+      <item track="1" instr="108" />
+      <item track="1" instr="109" />
+      <item track="1" instr="110" />
+      <item track="1" instr="111" />
+      <item track="1" instr="112" />
+      <item track="1" instr="113" />
+      <item track="1" instr="114" />
+      <item track="1" instr="115" />
+      <item track="1" instr="116" />
+      <item track="1" instr="117" />
+      <item track="1" instr="118" />
+      <item track="1" instr="119" />
+      <item track="1" instr="120" />
+      <item track="1" instr="121" />
+      <item track="1" instr="122" />
+      <item track="1" instr="123" />
+      <item track="1" instr="124" />
+      <item track="1" instr="125" />
+      <item track="1" instr="126" />
+      <item track="1" instr="127" />
+      <item track="2" instr="35" />
+      <item track="2" instr="36" />
+      <item track="2" instr="37" />
+      <item track="2" instr="38" />
+      <item track="2" instr="39" />
+      <item track="2" instr="40" />
+      <item track="2" instr="41" />
+      <item track="2" instr="42" />
+      <item track="2" instr="43" />
+      <item track="2" instr="44" />
+      <item track="2" instr="45" />
+      <item track="2" instr="46" />
+      <item track="2" instr="47" />
+      <item track="2" instr="48" />
+      <item track="2" instr="49" />
+      <item track="2" instr="50" />
+      <item track="2" instr="51" />
+      <item track="2" instr="52" />
+      <item track="2" instr="53" />
+      <item track="2" instr="54" />
+      <item track="2" instr="55" />
+      <item track="2" instr="56" />
+      <item track="2" instr="57" />
+      <item track="2" instr="58" />
+      <item track="2" instr="59" />
+      <item track="2" instr="60" />
+      <item track="2" instr="61" />
+      <item track="2" instr="62" />
+      <item track="2" instr="63" />
+      <item track="2" instr="64" />
+      <item track="2" instr="65" />
+      <item track="2" instr="66" />
+      <item track="2" instr="67" />
+      <item track="2" instr="68" />
+      <item track="2" instr="69" />
+      <item track="2" instr="70" />
+      <item track="2" instr="71" />
+      <item track="2" instr="72" />
+      <item track="2" instr="73" />
+      <item track="2" instr="74" />
+      <item track="2" instr="75" />
+      <item track="2" instr="76" />
+      <item track="2" instr="77" />
+      <item track="2" instr="78" />
+      <item track="2" instr="79" />
+      <item track="2" instr="80" />
+      <item track="2" instr="81" />
+      <item track="2" instr="0" />
+      <item track="2" instr="1" />
+      <item track="2" instr="2" />
+      <item track="2" instr="3" />
+      <item track="2" instr="4" />
+      <item track="2" instr="5" />
+      <item track="2" instr="6" />
+      <item track="2" instr="7" />
+      <item track="2" instr="8" />
+      <item track="2" instr="9" />
+      <item track="2" instr="10" />
+      <item track="2" instr="11" />
+      <item track="2" instr="12" />
+      <item track="2" instr="13" />
+      <item track="2" instr="14" />
+      <item track="2" instr="15" />
+      <item track="2" instr="16" />
+      <item track="2" instr="17" />
+      <item track="2" instr="18" />
+      <item track="2" instr="19" />
+      <item track="2" instr="20" />
+      <item track="2" instr="21" />
+      <item track="2" instr="22" />
+      <item track="2" instr="23" />
+      <item track="2" instr="24" />
+      <item track="2" instr="25" />
+      <item track="2" instr="26" />
+      <item track="2" instr="27" />
+      <item track="2" instr="28" />
+      <item track="2" instr="29" />
+      <item track="2" instr="30" />
+      <item track="2" instr="31" />
+      <item track="2" instr="32" />
+      <item track="2" instr="33" />
+      <item track="2" instr="34" />
+      <item track="2" instr="82" />
+      <item track="2" instr="83" />
+      <item track="2" instr="84" />
+      <item track="2" instr="85" />
+      <item track="2" instr="86" />
+      <item track="2" instr="87" />
+      <item track="2" instr="88" />
+      <item track="2" instr="89" />
+      <item track="2" instr="90" />
+      <item track="2" instr="91" />
+      <item track="2" instr="92" />
+      <item track="2" instr="93" />
+      <item track="2" instr="94" />
+      <item track="2" instr="95" />
+      <item track="2" instr="96" />
+      <item track="2" instr="97" />
+      <item track="2" instr="98" />
+      <item track="2" instr="99" />
+      <item track="2" instr="100" />
+      <item track="2" instr="101" />
+      <item track="2" instr="102" />
+      <item track="2" instr="103" />
+      <item track="2" instr="104" />
+      <item track="2" instr="105" />
+      <item track="2" instr="106" />
+      <item track="2" instr="107" />
+      <item track="2" instr="108" />
+      <item track="2" instr="109" />
+      <item track="2" instr="110" />
+      <item track="2" instr="111" />
+      <item track="2" instr="112" />
+      <item track="2" instr="113" />
+      <item track="2" instr="114" />
+      <item track="2" instr="115" />
+      <item track="2" instr="116" />
+      <item track="2" instr="117" />
+      <item track="2" instr="118" />
+      <item track="2" instr="119" />
+      <item track="2" instr="120" />
+      <item track="2" instr="121" />
+      <item track="2" instr="122" />
+      <item track="2" instr="123" />
+      <item track="2" instr="124" />
+      <item track="2" instr="125" />
+      <item track="2" instr="126" />
+      <item track="2" instr="127" />
+      <item track="3" instr="35" />
+      <item track="3" instr="36" />
+      <item track="3" instr="37" />
+      <item track="3" instr="38" />
+      <item track="3" instr="39" />
+      <item track="3" instr="40" />
+      <item track="3" instr="41" />
+      <item track="3" instr="42" />
+      <item track="3" instr="43" />
+      <item track="3" instr="44" />
+      <item track="3" instr="45" />
+      <item track="3" instr="46" />
+      <item track="3" instr="47" />
+      <item track="3" instr="48" />
+      <item track="3" instr="49" />
+      <item track="3" instr="50" />
+      <item track="3" instr="51" />
+      <item track="3" instr="52" />
+      <item track="3" instr="53" />
+      <item track="3" instr="54" />
+      <item track="3" instr="55" />
+      <item track="3" instr="56" />
+      <item track="3" instr="57" />
+      <item track="3" instr="58" />
+      <item track="3" instr="59" />
+      <item track="3" instr="60" />
+      <item track="3" instr="61" />
+      <item track="3" instr="62" />
+      <item track="3" instr="63" />
+      <item track="3" instr="64" />
+      <item track="3" instr="65" />
+      <item track="3" instr="66" />
+      <item track="3" instr="67" />
+      <item track="3" instr="68" />
+      <item track="3" instr="69" />
+      <item track="3" instr="70" />
+      <item track="3" instr="71" />
+      <item track="3" instr="72" />
+      <item track="3" instr="73" />
+      <item track="3" instr="74" />
+      <item track="3" instr="75" />
+      <item track="3" instr="76" />
+      <item track="3" instr="77" />
+      <item track="3" instr="78" />
+      <item track="3" instr="79" />
+      <item track="3" instr="80" />
+      <item track="3" instr="81" />
+      <item track="3" instr="0" />
+      <item track="3" instr="1" />
+      <item track="3" instr="2" />
+      <item track="3" instr="3" />
+      <item track="3" instr="4" />
+      <item track="3" instr="5" />
+      <item track="3" instr="6" />
+      <item track="3" instr="7" />
+      <item track="3" instr="8" />
+      <item track="3" instr="9" />
+      <item track="3" instr="10" />
+      <item track="3" instr="11" />
+      <item track="3" instr="12" />
+      <item track="3" instr="13" />
+      <item track="3" instr="14" />
+      <item track="3" instr="15" />
+      <item track="3" instr="16" />
+      <item track="3" instr="17" />
+      <item track="3" instr="18" />
+      <item track="3" instr="19" />
+      <item track="3" instr="20" />
+      <item track="3" instr="21" />
+      <item track="3" instr="22" />
+      <item track="3" instr="23" />
+      <item track="3" instr="24" />
+      <item track="3" instr="25" />
+      <item track="3" instr="26" />
+      <item track="3" instr="27" />
+      <item track="3" instr="28" />
+      <item track="3" instr="29" />
+      <item track="3" instr="30" />
+      <item track="3" instr="31" />
+      <item track="3" instr="32" />
+      <item track="3" instr="33" />
+      <item track="3" instr="34" />
+      <item track="3" instr="82" />
+      <item track="3" instr="83" />
+      <item track="3" instr="84" />
+      <item track="3" instr="85" />
+      <item track="3" instr="86" />
+      <item track="3" instr="87" />
+      <item track="3" instr="88" />
+      <item track="3" instr="89" />
+      <item track="3" instr="90" />
+      <item track="3" instr="91" />
+      <item track="3" instr="92" />
+      <item track="3" instr="93" />
+      <item track="3" instr="94" />
+      <item track="3" instr="95" />
+      <item track="3" instr="96" />
+      <item track="3" instr="97" />
+      <item track="3" instr="98" />
+      <item track="3" instr="99" />
+      <item track="3" instr="100" />
+      <item track="3" instr="101" />
+      <item track="3" instr="102" />
+      <item track="3" instr="103" />
+      <item track="3" instr="104" />
+      <item track="3" instr="105" />
+      <item track="3" instr="106" />
+      <item track="3" instr="107" />
+      <item track="3" instr="108" />
+      <item track="3" instr="109" />
+      <item track="3" instr="110" />
+      <item track="3" instr="111" />
+      <item track="3" instr="112" />
+      <item track="3" instr="113" />
+      <item track="3" instr="114" />
+      <item track="3" instr="115" />
+      <item track="3" instr="116" />
+      <item track="3" instr="117" />
+      <item track="3" instr="118" />
+      <item track="3" instr="119" />
+      <item track="3" instr="120" />
+      <item track="3" instr="121" />
+      <item track="3" instr="122" />
+      <item track="3" instr="123" />
+      <item track="3" instr="124" />
+      <item track="3" instr="125" />
+      <item track="3" instr="126" />
+      <item track="3" instr="127" />
+      <item track="4" instr="35" />
+      <item track="4" instr="36" />
+      <item track="4" instr="37" />
+      <item track="4" instr="38" />
+      <item track="4" instr="39" />
+      <item track="4" instr="40" />
+      <item track="4" instr="41" />
+      <item track="4" instr="42" />
+      <item track="4" instr="43" />
+      <item track="4" instr="44" />
+      <item track="4" instr="45" />
+      <item track="4" instr="46" />
+      <item track="4" instr="47" />
+      <item track="4" instr="48" />
+      <item track="4" instr="49" />
+      <item track="4" instr="50" />
+      <item track="4" instr="51" />
+      <item track="4" instr="52" />
+      <item track="4" instr="53" />
+      <item track="4" instr="54" />
+      <item track="4" instr="55" />
+      <item track="4" instr="56" />
+      <item track="4" instr="57" />
+      <item track="4" instr="58" />
+      <item track="4" instr="59" />
+      <item track="4" instr="60" />
+      <item track="4" instr="61" />
+      <item track="4" instr="62" />
+      <item track="4" instr="63" />
+      <item track="4" instr="64" />
+      <item track="4" instr="65" />
+      <item track="4" instr="66" />
+      <item track="4" instr="67" />
+      <item track="4" instr="68" />
+      <item track="4" instr="69" />
+      <item track="4" instr="70" />
+      <item track="4" instr="71" />
+      <item track="4" instr="72" />
+      <item track="4" instr="73" />
+      <item track="4" instr="74" />
+      <item track="4" instr="75" />
+      <item track="4" instr="76" />
+      <item track="4" instr="77" />
+      <item track="4" instr="78" />
+      <item track="4" instr="79" />
+      <item track="4" instr="80" />
+      <item track="4" instr="81" />
+      <item track="4" instr="0" />
+      <item track="4" instr="1" />
+      <item track="4" instr="2" />
+      <item track="4" instr="3" />
+      <item track="4" instr="4" />
+      <item track="4" instr="5" />
+      <item track="4" instr="6" />
+      <item track="4" instr="7" />
+      <item track="4" instr="8" />
+      <item track="4" instr="9" />
+      <item track="4" instr="10" />
+      <item track="4" instr="11" />
+      <item track="4" instr="12" />
+      <item track="4" instr="13" />
+      <item track="4" instr="14" />
+      <item track="4" instr="15" />
+      <item track="4" instr="16" />
+      <item track="4" instr="17" />
+      <item track="4" instr="18" />
+      <item track="4" instr="19" />
+      <item track="4" instr="20" />
+      <item track="4" instr="21" />
+      <item track="4" instr="22" />
+      <item track="4" instr="23" />
+      <item track="4" instr="24" />
+      <item track="4" instr="25" />
+      <item track="4" instr="26" />
+      <item track="4" instr="27" />
+      <item track="4" instr="28" />
+      <item track="4" instr="29" />
+      <item track="4" instr="30" />
+      <item track="4" instr="31" />
+      <item track="4" instr="32" />
+      <item track="4" instr="33" />
+      <item track="4" instr="34" />
+      <item track="4" instr="82" />
+      <item track="4" instr="83" />
+      <item track="4" instr="84" />
+      <item track="4" instr="85" />
+      <item track="4" instr="86" />
+      <item track="4" instr="87" />
+      <item track="4" instr="88" />
+      <item track="4" instr="89" />
+      <item track="4" instr="90" />
+      <item track="4" instr="91" />
+      <item track="4" instr="92" />
+      <item track="4" instr="93" />
+      <item track="4" instr="94" />
+      <item track="4" instr="95" />
+      <item track="4" instr="96" />
+      <item track="4" instr="97" />
+      <item track="4" instr="98" />
+      <item track="4" instr="99" />
+      <item track="4" instr="100" />
+      <item track="4" instr="101" />
+      <item track="4" instr="102" />
+      <item track="4" instr="103" />
+      <item track="4" instr="104" />
+      <item track="4" instr="105" />
+      <item track="4" instr="106" />
+      <item track="4" instr="107" />
+      <item track="4" instr="108" />
+      <item track="4" instr="109" />
+      <item track="4" instr="110" />
+      <item track="4" instr="111" />
+      <item track="4" instr="112" />
+      <item track="4" instr="113" />
+      <item track="4" instr="114" />
+      <item track="4" instr="115" />
+      <item track="4" instr="116" />
+      <item track="4" instr="117" />
+      <item track="4" instr="118" />
+      <item track="4" instr="119" />
+      <item track="4" instr="120" />
+      <item track="4" instr="121" />
+      <item track="4" instr="122" />
+      <item track="4" instr="123" />
+      <item track="4" instr="124" />
+      <item track="4" instr="125" />
+      <item track="4" instr="126" />
+      <item track="4" instr="127" />
+      <item track="5" instr="35" />
+      <item track="5" instr="36" />
+      <item track="5" instr="37" />
+      <item track="5" instr="38" />
+      <item track="5" instr="39" />
+      <item track="5" instr="40" />
+      <item track="5" instr="41" />
+      <item track="5" instr="42" />
+      <item track="5" instr="43" />
+      <item track="5" instr="44" />
+      <item track="5" instr="45" />
+      <item track="5" instr="46" />
+      <item track="5" instr="47" />
+      <item track="5" instr="48" />
+      <item track="5" instr="49" />
+      <item track="5" instr="50" />
+      <item track="5" instr="51" />
+      <item track="5" instr="52" />
+      <item track="5" instr="53" />
+      <item track="5" instr="54" />
+      <item track="5" instr="55" />
+      <item track="5" instr="56" />
+      <item track="5" instr="57" />
+      <item track="5" instr="58" />
+      <item track="5" instr="59" />
+      <item track="5" instr="60" />
+      <item track="5" instr="61" />
+      <item track="5" instr="62" />
+      <item track="5" instr="63" />
+      <item track="5" instr="64" />
+      <item track="5" instr="65" />
+      <item track="5" instr="66" />
+      <item track="5" instr="67" />
+      <item track="5" instr="68" />
+      <item track="5" instr="69" />
+      <item track="5" instr="70" />
+      <item track="5" instr="71" />
+      <item track="5" instr="72" />
+      <item track="5" instr="73" />
+      <item track="5" instr="74" />
+      <item track="5" instr="75" />
+      <item track="5" instr="76" />
+      <item track="5" instr="77" />
+      <item track="5" instr="78" />
+      <item track="5" instr="79" />
+      <item track="5" instr="80" />
+      <item track="5" instr="81" />
+      <item track="5" instr="0" />
+      <item track="5" instr="1" />
+      <item track="5" instr="2" />
+      <item track="5" instr="3" />
+      <item track="5" instr="4" />
+      <item track="5" instr="5" />
+      <item track="5" instr="6" />
+      <item track="5" instr="7" />
+      <item track="5" instr="8" />
+      <item track="5" instr="9" />
+      <item track="5" instr="10" />
+      <item track="5" instr="11" />
+      <item track="5" instr="12" />
+      <item track="5" instr="13" />
+      <item track="5" instr="14" />
+      <item track="5" instr="15" />
+      <item track="5" instr="16" />
+      <item track="5" instr="17" />
+      <item track="5" instr="18" />
+      <item track="5" instr="19" />
+      <item track="5" instr="20" />
+      <item track="5" instr="21" />
+      <item track="5" instr="22" />
+      <item track="5" instr="23" />
+      <item track="5" instr="24" />
+      <item track="5" instr="25" />
+      <item track="5" instr="26" />
+      <item track="5" instr="27" />
+      <item track="5" instr="28" />
+      <item track="5" instr="29" />
+      <item track="5" instr="30" />
+      <item track="5" instr="31" />
+      <item track="5" instr="32" />
+      <item track="5" instr="33" />
+      <item track="5" instr="34" />
+      <item track="5" instr="82" />
+      <item track="5" instr="83" />
+      <item track="5" instr="84" />
+      <item track="5" instr="85" />
+      <item track="5" instr="86" />
+      <item track="5" instr="87" />
+      <item track="5" instr="88" />
+      <item track="5" instr="89" />
+      <item track="5" instr="90" />
+      <item track="5" instr="91" />
+      <item track="5" instr="92" />
+      <item track="5" instr="93" />
+      <item track="5" instr="94" />
+      <item track="5" instr="95" />
+      <item track="5" instr="96" />
+      <item track="5" instr="97" />
+      <item track="5" instr="98" />
+      <item track="5" instr="99" />
+      <item track="5" instr="100" />
+      <item track="5" instr="101" />
+      <item track="5" instr="102" />
+      <item track="5" instr="103" />
+      <item track="5" instr="104" />
+      <item track="5" instr="105" />
+      <item track="5" instr="106" />
+      <item track="5" instr="107" />
+      <item track="5" instr="108" />
+      <item track="5" instr="109" />
+      <item track="5" instr="110" />
+      <item track="5" instr="111" />
+      <item track="5" instr="112" />
+      <item track="5" instr="113" />
+      <item track="5" instr="114" />
+      <item track="5" instr="115" />
+      <item track="5" instr="116" />
+      <item track="5" instr="117" />
+      <item track="5" instr="118" />
+      <item track="5" instr="119" />
+      <item track="5" instr="120" />
+      <item track="5" instr="121" />
+      <item track="5" instr="122" />
+      <item track="5" instr="123" />
+      <item track="5" instr="124" />
+      <item track="5" instr="125" />
+      <item track="5" instr="126" />
+      <item track="5" instr="127" />
+      </drum_ordering>
+    </song>
+  <toplevels>
+    <arrangerview>
+      <topwin>
+        <is_subwin>1</is_subwin>
+        <x>0</x>
+        <y>0</y>
+        <width>914</width>
+        <height>399</height>
+        <wsMaximized>1</wsMaximized>
+        <wsActive>1</wsActive>
+        <toolbars></toolbars>
+        </topwin>
+      <tool>1</tool>
+      <arranger>
+        <raster>0</raster>
+        <info>1</info>
+        <split>68 335 503 </split>
+        <xmag>470</xmag>
+        <xpos>0</xpos>
+        <ypos>0</ypos>
+        </arranger>
+      </arrangerview>
+    </toplevels>
+  </muse>
