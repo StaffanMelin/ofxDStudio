@@ -1,0 +1,12 @@
+<settings>
+    <settingstype>DHihat</settingstype>
+    <type>3</type>
+    <vol>1.000000000</vol>
+    <freq>5000.000000000</freq>
+    <decay>0.200000003</decay>
+    <tone>0.800000012</tone>
+    <noisiness>0.500000000</noisiness>
+    <amp>0.300000012</amp>
+    <res>0.300000012</res>
+    <drive>0.300000012</drive>
+</settings>

@@ -1,0 +1,37 @@
+<settings>
+    <settingstype>DSynthFm</settingstype>
+    <voices>2</voices>
+    <ratio>1.000000000</ratio>
+    <index>0.500000000</index>
+    <tune>0.000000000</tune>
+    <transpose>0</transpose>
+    <noise_level>0.000000000</noise_level>
+    <filter_type>2</filter_type>
+    <filter_cutoff>1000.000000000</filter_cutoff>
+    <filter_res>0.000000000</filter_res>
+    <eg_p_level>0.000000000</eg_p_level>
+    <eg_p_attack>0.000000000</eg_p_attack>
+    <eg_p_decay>0.000000000</eg_p_decay>
+    <eg_p_sustain>0.000000000</eg_p_sustain>
+    <eg_p_release>0.000000000</eg_p_release>
+    <eg_f_level>1.000000000</eg_f_level>
+    <eg_f_attack>0.000000000</eg_f_attack>
+    <eg_f_decay>0.000000000</eg_f_decay>
+    <eg_f_sustain>1.000000000</eg_f_sustain>
+    <eg_f_release>0.000000000</eg_f_release>
+    <eg_a_attack>0.010000000</eg_a_attack>
+    <eg_a_decay>0.200000003</eg_a_decay>
+    <eg_a_sustain>0.000000000</eg_a_sustain>
+    <eg_a_release>0.100000001</eg_a_release>
+    <lfo_waveform>1</lfo_waveform>
+    <lfo_freq>0.600000024</lfo_freq>
+    <lfo_amp>0.800000012</lfo_amp>
+    <lfo_p_level>0.000000000</lfo_p_level>
+    <lfo_f_level>0.000000000</lfo_f_level>
+    <lfo_a_level>0.000000000</lfo_a_level>
+    <portamento>0.000000000</portamento>
+    <delay_delay>1.000000000</delay_delay>
+    <delay_feedback>0.400000006</delay_feedback>
+    <overdrive_gain>0.000000000</overdrive_gain>
+    <overdrive_drive>0.000000000</overdrive_drive>
+</settings>

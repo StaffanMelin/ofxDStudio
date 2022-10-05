@@ -1,0 +1,4 @@
+ofxDaisySP
+ofxDStudio
+ofxGui
+ofxXmlSettings

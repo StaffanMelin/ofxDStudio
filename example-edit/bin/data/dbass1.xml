@@ -1,0 +1,13 @@
+<settings>
+    <settingstype>DBass</settingstype>
+    <type>2</type>
+    <vol>1.000000000</vol>
+    <freq>70.000000000</freq>
+    <tone>0.800000012</tone>
+    <decay>0.699999988</decay>
+    <fm_attack>0.800000012</fm_attack>
+    <fm_self>0.800000012</fm_self>
+    <fm_env_amount>0.800000012</fm_env_amount>
+    <fm_env_decay>0.500000000</fm_env_decay>
+    <min>0.500000000</min>
+</settings>
