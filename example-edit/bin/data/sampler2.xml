@@ -31,11 +31,11 @@
     <delay_feedback>0.300000012</delay_feedback>
     <overdrive_gain>0.000000000</overdrive_gain>
     <overdrive_drive>0.000000000</overdrive_drive>
-    <loop>0</loop>
+    <loop>1</loop>
     <sample_file_name>data/test.wav</sample_file_name>
     <sample_phase_start>0</sample_phase_start>
-    <sample_phase_loop_start>0</sample_phase_loop_start>
-    <sample_phase_loop_end>24831</sample_phase_loop_end>
+    <sample_phase_loop_start>4615</sample_phase_loop_start>
+    <sample_phase_loop_end>16359</sample_phase_loop_end>
     <sample_phase_end>24831</sample_phase_end>
     <sample_length>24831</sample_length>
     <sample_channels>2</sample_channels>
