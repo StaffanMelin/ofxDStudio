@@ -13,7 +13,7 @@ https://youtu.be/65uiYlsG29Q
 The parts of DStudio are:
 * ofxDaisySP – an addon with DaisySP, a DSP library.
 * ofxDStudio – an addon which builds upon DaisySP to give you synthesizers, a sample player, drum sounds, FX plugins, a mixer with FX, sequencers as well as utilities. All can be controlled by MIDI.
-* demos – nine examples that shows you how to use DStudio.
+* examples – many examples that shows you how to use DStudio.
 
 In ofxDStudio you will find:
 * 3 synthesizer classes
@@ -22,8 +22,8 @@ In ofxDStudio you will find:
 * 1 mixer class
 * 1 splitter class
 * 2 sequencer classes
-* 6 FX classes
-* a total of 24 classes
+* 1 generative drone class
+* 8 FX classes
 
 DStudio comes with aan extensive written manual.
 
