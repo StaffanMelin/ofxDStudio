@@ -4,6 +4,7 @@
 
 void DSampler::Init(const Config& config)
 {
+
     sample_rate_ = config.sample_rate;
     voices_ = config.voices;
     tune_ = config.tune;
@@ -38,15 +39,12 @@ void DSampler::Init(const Config& config)
     overdrive_drive_ = config.overdrive_drive;
     loop_ = config.loop;
     sample_file_name_ = config.sample_file_name;
-    // I am a bit unsure of whether to copy these...
-    /*
     sample_phase_start_ = config.sample_phase_start;
     sample_phase_loop_start_ = config.sample_phase_loop_start;
     sample_phase_loop_end_ = config.sample_phase_loop_end;
     sample_phase_end_ = config.sample_phase_end;
     sample_length_ = config.sample_length; // length of sample, < BUFFER_MAX
     sample_channels_ = config.sample_channels;
-    */
 
     for (uint8_t i = 0; i < voices_; i++)
     {
@@ -119,17 +117,6 @@ void DSampler::Init(const Config& config)
 
     // init
     osc_next_ = 0; // circular buffer of midi notes
-/*
-    // don't do this as they are set in .load() anyway
-    // and we don't want to mess upp any additional
-    // calls to Init() after loading
-    sample_length_ = 0; // length of sample, < BUFFER_MAX
-    sample_phase_start_ = 0;
-    sample_phase_loop_start_ = 0;
-    sample_phase_loop_end_ = 0;
-    sample_phase_end_ = 0;
-    sample_channels_ = 0;
-*/
 
     SetType(TUNED);
 }
@@ -201,22 +188,22 @@ void DSampler::Process(float *out_l, float *out_r)
             uint32_t sample_index_int_ = static_cast<int32_t>(sample_index_[i]);
             // how much did we miss?
             float sample_index_fraction_ = sample_index_[i] - sample_index_int_;
-
+            uint32_t index = sample_index_int_ * 2;
             // get samples and interpolate
             switch (sample_channels_)
             {
             case 1:
-                a = sample_buffer_l_[sample_index_int_];
-                b = sample_buffer_l_[sample_index_int_ + 1];
+                a = sample_buffer_[index];
+                b = sample_buffer_[index + 1];
                 osc_out_l = (a + (b - a) * sample_index_fraction_);// * env_a_out;
                 osc_out_r = osc_out_l;
                 break;
             case 2:
-                a = sample_buffer_l_[sample_index_int_];
-                b = sample_buffer_l_[sample_index_int_ + 1];
+                a = sample_buffer_[index];
+                b = sample_buffer_[index + 2];
                 osc_out_l = (a + (b - a) * sample_index_fraction_);// * env_a_out;
-                a = sample_buffer_r_[sample_index_int_];
-                b = sample_buffer_r_[sample_index_int_ + 1];
+                a = sample_buffer_[index + sample_channels_];
+                b = sample_buffer_[index + sample_channels_ + 2];
                 osc_out_r = (a + (b - a) * sample_index_fraction_);// * env_a_out;
                 break;
             default:
@@ -542,7 +529,7 @@ void DSampler::SetOverdrive(float overdrive_gain, float overdrive_drive)
 
 
 
-bool DSampler::Load(const std::string sample_file_name)
+bool DSampler::Load(const std::string sample_file_name, bool reset)
 {
     SNDFILE *sample_file;
     SF_INFO sample_file_info;
@@ -570,57 +557,29 @@ bool DSampler::Load(const std::string sample_file_name)
     }
 
     // we are assumeing that a frame is interleaved channels
-    // we read tham as floats and store them in l/r buffers
 
     sf_count_t	frame_count = sample_file_info.frames;
 
-    delete[ ] sample_buffer_l_;
-    delete[ ] sample_buffer_r_;
-
-    sample_buffer_load_ = new (std::nothrow) float[frame_count * frame_size];
-
-    if (sample_buffer_load_)
-    {
-        sample_buffer_l_ = new (std::nothrow) float[frame_count];
-
-        if (sample_buffer_l_)
-        {
-            sample_buffer_r_ = new (std::nothrow) float[frame_count];
-
-            if (sample_buffer_r_)
-            {
-                retval = true;
-            }
-        }
-    }
-
-    if (retval)
+    if (frame_count < SAMPLE_BUFFER_MAX)
     {
         // read sample data
-        frame_count = sf_readf_float(sample_file, sample_buffer_load_, sample_file_info.frames);
+        frame_count = sf_readf_float(sample_file, sample_buffer_, sample_file_info.frames);
 
-        // copy sample data
-        for (uint32_t i = 0; i < frame_count; i += frame_size)
+        if (reset)
         {
-            sample_buffer_l_[i] = sample_buffer_load_[i * frame_size];
-            if (frame_size == 2)
-            {
-                sample_buffer_r_[i] = sample_buffer_load_[i * frame_size + 1];
-            }
+            sample_length_ = frame_count;
+            sample_phase_start_ = 0;
+            sample_phase_loop_start_ = 0;
+            if (sample_phase_loop_end_ == 0)
+                sample_phase_loop_end_ = frame_count - 1;
+            if (sample_phase_end_ == 0)
+                sample_phase_end_ = frame_count - 1;
+            sample_file_name_ = sample_file_name;
         }
-
-        delete[ ] sample_buffer_load_;
-
-        sample_length_ = frame_count;
-        // sample_phase_start_ = 0;
-        // sample_phase_loop_start_ = 0;
-        if (sample_phase_loop_end_ == 0)
-            sample_phase_loop_end_ = frame_count - 1;
-        if (sample_phase_end_ == 0)
-            sample_phase_end_ = frame_count - 1;
+        // always set from sample data
         sample_channels_ = frame_size;
-        sample_file_name_ = sample_file_name;
     } else {
+        // failed to load so always reset values
         sample_length_ = 0;
         sample_phase_start_ = 0;
         sample_phase_loop_start_ = 0;

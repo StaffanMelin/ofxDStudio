@@ -246,7 +246,9 @@ void DSettings::SaveSetting(DSoundType type, DSoundSubType subtype, string file_
             settings.setValue("settings:sample_phase_loop_start", (int)(p->sample_phase_loop_start));
             settings.setValue("settings:sample_phase_loop_end", (int)(p->sample_phase_loop_end));
             settings.setValue("settings:sample_phase_end", (int)(p->sample_phase_end));
-            // sample_length, sample_channels ?
+
+            settings.setValue("settings:sample_length", (int)(p->sample_length));
+            settings.setValue("settings:sample_channels", (int)(p->sample_channels));
         }
         break;
     case DSettings::DRUM:
@@ -592,6 +594,8 @@ void DSettings::LoadSetting(DSoundType type, DSoundSubType subtype, string file_
             p->sample_phase_loop_start = settings.getValue("settings:sample_phase_loop_start", 0);
             p->sample_phase_loop_end = settings.getValue("settings:sample_phase_loop_end", 0);
             p->sample_phase_end = settings.getValue("settings:sample_phase_end", 0);
+            p->sample_length = settings.getValue("settings:sample_length", 0);
+            p->sample_channels = settings.getValue("settings:sample_channels", 0);
         }
         break;
 

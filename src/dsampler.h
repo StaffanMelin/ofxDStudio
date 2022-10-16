@@ -18,6 +18,7 @@
 #define DSAMPLER_BASE_FREQ 440.0f
 // max sample time in seconds
 #define SAMPLE_TIME_MAX 30
+#define SAMPLE_BUFFER_MAX (DSTUDIO_SAMPLE_RATE * SAMPLE_TIME_MAX * 2) // 60 secs; 48k * 2 * 4 = 384k/s
 // polyphony
 #define DSAMPLER_VOICES_MAX 8
 // delay
@@ -29,10 +30,15 @@ class DSampler : public DSound
 
 public:
 
-DSampler() {}
-~DSampler() {}
+    DSampler()
+    {
+        sample_buffer_ = new (std::nothrow) float[SAMPLE_BUFFER_MAX * 2];
+    }
 
-
+    ~DSampler()
+    {
+        delete sample_buffer_;
+    }
 
     enum Waveform
     {
@@ -106,7 +112,7 @@ DSampler() {}
         uint32_t sample_phase_loop_start;
         uint32_t sample_phase_loop_end;
         uint32_t sample_phase_end;
-        uint32_t sample_length; // length of sample, < BUFFER_MAX
+        uint32_t sample_length;
         uint8_t sample_channels;
     };
 
@@ -129,7 +135,7 @@ DSampler() {}
     void SetDelay(float, float);
     void SetOverdrive(float, float);
     void SetLoop(bool);
-    bool Load(std::string);
+    bool Load(std::string, bool reset = true);
     void GetPhase(uint32_t *, uint32_t *, uint32_t *, uint32_t *);
     void SetPhase(uint32_t, uint32_t, uint32_t, uint32_t);
     uint32_t GetLength();
@@ -184,16 +190,7 @@ private:
     float note_velocity_[DSAMPLER_VOICES_MAX];
 
     // sampler
-    #define SAMPLE_BUFFER_MAX (DSTUDIO_SAMPLE_RATE * SAMPLE_TIME_MAX) // 60 secs; 48k * 2 * 4 = 384k/s
-    /*
-    float sample_buffer_l_[SAMPLE_BUFFER_MAX];
-    float sample_buffer_r_[SAMPLE_BUFFER_MAX];
-    // temp buffer for loading samples
-    float sample_buffer_load_[SAMPLE_BUFFER_MAX * 2];
-    */
-    float *sample_buffer_l_;
-    float *sample_buffer_r_;
-    float *sample_buffer_load_;
+    float *sample_buffer_ = NULL;
 
     // sample info
     // sssssssssssssssssssss
