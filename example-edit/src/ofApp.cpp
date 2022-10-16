@@ -2654,11 +2654,7 @@ void ofApp::loadButtonPressed()
         case SAMPLER:
             DSettings::LoadSetting(DSettings::DSAMPLER, DSettings::NONE, path, &dsampler_config);
             dsampler.Init(dsampler_config);
-            dsampler.Load(dsampler_config.sample_file_name);
-            // read back values after Load() as GUI depends on structs
-            dsampler_config.sample_length = dsampler.GetLength();
-            dsampler.GetPhase(&dsampler_config.sample_phase_start, &dsampler_config.sample_phase_loop_start, &dsampler_config.sample_phase_loop_end, &dsampler_config.sample_phase_end);
-            // ignore dsampler_config.sample_channels for now
+            dsampler.Load(dsampler_config.sample_file_name);//, false);
             GuiSetSampler();
             break;
         case DRUM:
