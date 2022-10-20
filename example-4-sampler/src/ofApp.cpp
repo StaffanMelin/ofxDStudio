@@ -58,7 +58,7 @@ void ofApp::setup()
     dsampler_config.loop = true;
     dsampler.Init(dsampler_config);
 
-    dsampler.Load("data/test.wav");
+    dsampler.Load("data/test.wav", true);
 
     // dsynthvar
     DSynthVar::Config dsynthvar_config;
