@@ -347,11 +347,11 @@ void ofApp::setup(){
     dsampler_chorus.Init(dsampler_config);
 
     const char* sample_file_name_chorus = "data/chorus.wav";
-    dsampler_chorus.Load(sample_file_name_chorus);
+    dsampler_chorus.Load(sample_file_name_chorus, true);
 
     dsampler_verse.Init(dsampler_config);
     const char* sample_file_name_verse = "data/verse.wav";
-    dsampler_verse.Load(sample_file_name_verse);
+    dsampler_verse.Load(sample_file_name_verse, true);
 
     // drum machine
 
