@@ -348,16 +348,16 @@ void ofApp::setup(){
     dsampler_config.loop = false;
 
     dsampler1.Init(dsampler_config);
-    dsampler1.Load("data/ba.wav");
+    dsampler1.Load("data/ba.wav", true);
 
     dsampler2.Init(dsampler_config);
-    dsampler2.Load("data/boing.wav");
+    dsampler2.Load("data/boing.wav", true);
 
     dsampler3.Init(dsampler_config);
-    dsampler3.Load("data/do.wav");
+    dsampler3.Load("data/do.wav", true);
 
     dsampler4.Init(dsampler_config);
-    dsampler4.Load("data/tchack.wav");
+    dsampler4.Load("data/tchack.wav", true);
 
     DSound *dsplit_synth[MIXER_CHANNELS_MAX];
     dsplit_synth[0] = &dsampler1;
