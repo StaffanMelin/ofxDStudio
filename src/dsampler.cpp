@@ -188,7 +188,7 @@ void DSampler::Process(float *out_l, float *out_r)
             uint32_t sample_index_int_ = static_cast<int32_t>(sample_index_[i]);
             // how much did we miss?
             float sample_index_fraction_ = sample_index_[i] - sample_index_int_;
-            uint32_t index = sample_index_int_ * 2;
+            uint32_t index = sample_index_int_ * sample_channels_;
             // get samples and interpolate
             switch (sample_channels_)
             {
@@ -570,9 +570,9 @@ bool DSampler::Load(const std::string sample_file_name, bool reset)
             sample_length_ = frame_count;
             sample_phase_start_ = 0;
             sample_phase_loop_start_ = 0;
-            if (sample_phase_loop_end_ == 0)
+            //if (sample_phase_loop_end_ == 0)
                 sample_phase_loop_end_ = frame_count - 1;
-            if (sample_phase_end_ == 0)
+            //if (sample_phase_end_ == 0)
                 sample_phase_end_ = frame_count - 1;
             sample_file_name_ = sample_file_name;
         }

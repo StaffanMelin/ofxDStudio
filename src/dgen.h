@@ -7,6 +7,8 @@
 
 #include "dseq.h"
 
+#include <vector>
+
 #define DRAMA_MIN_LEN 4
 #define DRAMA_MAX_LEN 16
 // MIDI pitch value indicating a rest
@@ -84,23 +86,13 @@ private:
     std::vector<DMidiSeqStep> queue_[MIXER_CHANNELS_MAX];
     uint32_t queue_note_[MIXER_CHANNELS_MAX]; // position in queue
 
-//    uint8_t note_base_;
-//    uint8_t note_third_;
-//    uint8_t note_fifth_;
-//#define DGEN_NOTE_PAD_LEN 4
-//#define DGEN_NOTE_ARP_LEN 4
-//#define DGEN_NOTE_MELODY_LEN 8
-    //uint8_t note_base_len_;
     uint8_t note_pad_len_;
     uint8_t note_arp_len_;
     uint8_t note_melody_len_;
     dgen_note_t note_base_;
-    dgen_note_t note_pad_;//[DGEN_NOTE_PAD_LEN] = {0, 3, 7, 10};
-    dgen_note_t note_arp_;//[DGEN_NOTE_ARP_LEN] = {0, 0, 3, 5};
-    dgen_note_t note_melody_;//[DGEN_NOTE_MELODY_LEN] = {0, 2, 3, 2, 5, 3, 7, 3};
-//    uint8_t note_pad_[DGEN_NOTE_PAD_LEN] = {0, 3, 7, 10};
-//    uint8_t note_arp_[DGEN_NOTE_ARP_LEN] = {0, 0, 3, 5};
-//    uint8_t note_melody_[DGEN_NOTE_MELODY_LEN] = {0, 2, 3, 2, 5, 3, 7, 3};
+    dgen_note_t note_pad_;
+    dgen_note_t note_arp_;
+    dgen_note_t note_melody_;
 
     DramaType drama_;
     uint64_t drama_ticks_;
