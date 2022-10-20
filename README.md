@@ -25,7 +25,8 @@ In ofxDStudio you will find:
 * 1 generative drone class
 * 8 FX classes
 
-DStudio comes with aan extensive written manual.
+DStudio comes with aan extensive written manual
+https://www.oscillator.se/opensource/#openframeworks
 
 DStudio has been developed and tested on Debian 11 testing.
 
@@ -36,3 +37,4 @@ Read more
 https://www.oscillator.se/opensource/#openframeworks
 
 There is also a release of DStudio for rtAudio.
+https://www.oscillator.se/opensource/#openframeworks
